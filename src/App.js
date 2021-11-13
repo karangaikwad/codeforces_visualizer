@@ -1,7 +1,7 @@
 import "./App.css";
 import useState from "react";
 import Search from "./components/search";
-import Userrating from "./components/userrating";
+import Search from "./components/userrating";
 function App() {
   const [userid, setUserid] = useState(null);
   function handleclick(str) {
@@ -14,5 +14,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
