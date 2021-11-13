@@ -1,26 +1,25 @@
 import React, { useState } from "react";
+function SearchBar(props) {
+  const [name, setName] = useState("");
 
-function Search(props) {
-  const [data, setData] = useState(null);
-  const [print, setPrint] = useState(false);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // console.log(name);
+    props.handleclick(name);
+  };
 
-  function getData(val) {
-    console.warn(val.target.value);
-    if (setPrint) {
-      setData(val.target.value);
-      console.log(val.target.value);
-      props.handleclick(val.target.value);
-    }
-  }
   return (
-    <div className="App">
-      {print ? <h1> {data}</h1> : null}
-      <input type="text" />
-      <button onClick={() => setPrint(true)} onClick={getData}>
-        Print Data
-      </button>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Enter username:
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+      <input type="submit" />
+    </form>
   );
 }
-
-export default Search;
+export default SearchBar;

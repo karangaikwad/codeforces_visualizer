@@ -1,17 +1,17 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Search from "./components/search";
+import SearchBar from "./components/search";
 import Userrating from "./components/userrating";
 function App() {
-  const [userid, setUserid] = useState(null);
+  const [userid, setUserid] = useState("karanrg");
+  useEffect(() => {}, [userid]);
   function handleclick(str) {
     setUserid(str);
-    console.log(userid);
   }
   return (
     <>
-      <Search handleclick={handleclick} />
-      <Userrating />
+      <SearchBar handleclick={handleclick} />
+      <Userrating name={userid} />
     </>
   );
 }
