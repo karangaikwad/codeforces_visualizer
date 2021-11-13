@@ -1,7 +1,7 @@
 import "./App.css";
-import useState from "react";
+import {useState,useEffect} from "react";
 import Search from "./components/search";
-import Search from "./components/userrating";
+import Userrating from "./components/userrating";
 function App() {
   const [userid, setUserid] = useState(null);
   function handleclick(str) {
@@ -9,8 +9,8 @@ function App() {
   }
   return (
     <>
-      {/* <Search handleclick={handleclick} /> */}
-      {/* <Userrating /> */}
+       <Search handleclick={handleclick} /> 
+       <Userrating /> 
     </>
   );
 }
