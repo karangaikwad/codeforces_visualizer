@@ -15,7 +15,7 @@ function App() {
       <SearchBar handleclick={handleclick} />
       <Userrating name={userid} />
 
-      {/* <Submissiontable name={userid} /> */}
+       <Submissiontable name={userid} /> 
       {/* <Contesttable name={userid} /> */}
     </>
   );
