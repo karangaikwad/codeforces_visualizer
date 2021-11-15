@@ -17,7 +17,7 @@ function Userrating(props) {
 
   //   console.log(props.name);
   //   console.log(userdata);
-  return <> {userdata && <h1>{userdata.result[0].rating}</h1>}</>;
+  return <> {userdata && <h1>User Rating - {userdata.result[0].rating}</h1>}</>;
 }
 
 export default Userrating;
