@@ -74,11 +74,11 @@ function Contesttable(props) {
 
   return (
     <>  
-      <table className="mdl-data-table mdl-js-data-table" data-upgraded=",MaterialDataTable" >
+      <table className="table1" >
         <tbody>
           <tr className="mdl-color--teal-300">
             <th className="mdl-data-table__cell--non-numeric">Contests of</th>
-            <th className="handle-text">{userdata && <p>{props.name}</p>}</th>
+            <th className="handle-text">{props.name}</th>
           </tr>
           <tr>
             <td className="mdl-data-table__cell--non-numeric">

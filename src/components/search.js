@@ -10,10 +10,12 @@ function SearchBar(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Enter username:
+      <label className="spacinginsubmitbutton">
+        
         <input
+
           type="text"
+          placeholder="USERNAME" 
           value={name}
           onChange={(e) => setName(e.target.value)}
         />

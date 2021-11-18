@@ -12,11 +12,21 @@ function App() {
   }
   return (
     <>
-      {/* <SearchBar handleclick={handleclick} /> */}
-      {/* <Userrating name={userid} /> */}
+    <div className="aaa">
 
-      {/* <Submissiontable name={userid} /> */}
+    
+       <SearchBar handleclick={handleclick} /> 
+       </div>
+       <div className="aaa">
+       <Userrating name={userid} /> 
+       </div>
+       <div className="aaa">
+
+       <Submissiontable name={userid} /> 
+       </div>
+       <div className="aaa">
       <Contesttable name={userid} />
+      </div>
     </>
   );
 }
